@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #0db4ba;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-modern {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Luxury drop shadow */
+.text-shadow-luxury {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.text-glow {
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.35);
+}
+
+/* Glassmorphism */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.glass-pill:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Clean, Crisp Arrow Pointer (~150% scale of default 24px cursor -> 36px) */
+.custom-arrow-cursor {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 36px;
+  height: 36px;
+  will-change: transform;
+  transform: translate3d(-100px, -100px, 0);
+  transition: opacity 0.15s ease;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+}
+
+/* Hide default cursor on desktop */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Folded Corner Ribbon for Award Winners (Noticeably Bigger & Thicker) */
+.ribbon-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.ribbon-teal {
+  position: absolute;
+  display: block;
+  width: 170px;
+  padding: 8px 0;
+  background: linear-gradient(135deg, #07aaab 0%, #10c5c6 50%, #057d7e 100%);
+  box-shadow: 0 4px 14px rgba(7, 170, 171, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-align: center;
+  text-transform: uppercase;
+  left: -44px;
+  top: 26px;
+  transform: rotate(-45deg);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.35);
+}
+
+/* Folded 3D Corner Triangle Effects */
+.ribbon-wrapper::before,
+.ribbon-wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border: 5px solid #034849;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.ribbon-wrapper::before {
+  top: 0;
+  right: 0;
+}
+
+.ribbon-wrapper::after {
+  bottom: 0;
+  left: 0;
+}
+
+/* Respect reduced-motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

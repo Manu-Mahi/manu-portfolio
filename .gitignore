@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Python cache & temporary analysis artifacts
+__pycache__/
+*.pyc
+temp_inspect/
+test_lossless_new.webp
+
+# Logs & OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets (if needed for later)
+.env
+.env.*
+!.env.example
