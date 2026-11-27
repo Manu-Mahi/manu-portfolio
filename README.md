@@ -2,10 +2,6 @@
 
 Welcome to my personal portfolio! A space showcasing my software engineering projects, technical experiences, and creative interests through interactive design and thoughtful digital experiences.
 
-## Live Website
-
-[View My Portfolio](https://manu-portfolio-three-drab.vercel.app/)
-
 ## Preview
 
 <img width="1892" height="946" alt="image" src="https://github.com/user-attachments/assets/5f3606bd-a1c8-4216-90a5-c581f7e395a2" />
@@ -43,14 +39,14 @@ Welcome to my personal portfolio! A space showcasing my software engineering pro
 ## Project Structure
 
 ```text
-portfolio/
-├── public/              # Images, resume, and animation frames
+manu-portfolio/
+├── public/             # Images, resume, and animation frames
 ├── src/
-│   ├── components/      # Portfolio sections and UI components
-│   ├── data/            # Project information
-│   ├── App.tsx          # Main application
-│   └── index.css        # Styling
-├── scripts/             # Animation processing utilities
+│   ├── components/     # Portfolio sections and UI components
+│   ├── data/           # Project information
+│   ├── App.tsx         # Main application
+│   └── index.css       # Styling
+├── scripts/            # Animation processing utilities
 ├── index.html
 ├── package.json
 └── vite.config.ts
@@ -82,4 +78,8 @@ pnpm run preview
 ```
 
 ---
+## Live Website
+
+[View My Portfolio](https://manu-portfolio-three-drab.vercel.app/)
+
 
