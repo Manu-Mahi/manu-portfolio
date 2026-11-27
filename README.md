@@ -4,11 +4,12 @@ Welcome to my personal portfolio! A space showcasing my software engineering pro
 
 ## Live Website
 
-[View My Portfolio](VERCEL_URL)
+[View My Portfolio](https://manu-portfolio-three-drab.vercel.app/)
 
 ## Preview
 
-*Add a screenshot of your portfolio homepage here.*
+<img width="1892" height="946" alt="image" src="https://github.com/user-attachments/assets/5f3606bd-a1c8-4216-90a5-c581f7e395a2" />
+
 
 ## Features
 
